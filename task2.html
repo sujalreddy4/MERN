@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bars</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.vertical-nav{
+    margin-right: 200px;
+}
+
+.vn{
+  border: 15px solid white;
+  border-bottom:1px ;
+}
+
+.vn1{
+  border: 1px solid black;
+  margin-left: 10px;
+}
+.vertical-nav ul {
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  width: 300px;
+  background-color: #a3e2fb;
+}
+
+
+.vertical-nav ul li a {
+    display: block;
+  color: blue;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: x-large;
+  font-family:'Times New Roman', Times, serif ;
+}
+
+.vertical-nav ul li a:hover {
+    background-color: #f9c62e;
+  color: white;
+}
+.hn{
+  border: 15px solid white;
+  border-right:0px ;
+}
+.hn1{
+  border: 1px solid black;
+}
+
+.horizontal-nav{
+    margin-top: 100px;
+}
+
+
+.horizontal-nav ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dbd4d4f0;
+}
+
+.horizontal-nav ul li {
+    float: left;
+  border-right:1px solid blue;
+}
+
+.horizontal-nav ul li a {
+    display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: x-large;
+  font-family:'Times New Roman', Times, serif ;
+}
+
+.horizontal-nav ul li a:hover {
+    background-color: #8d8a8a;
+    color: white;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="vertical-nav"> 
+            <h2 style="text-align: center;">Verical Navigation Bar</h2>
+            <div class="vn1">
+            <ul class="vn">
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Bootstrap</a></li>
+            </ul>
+            </div>
+        </nav>
+        <nav class="horizontal-nav"> <center><h2>Horizontal Navigation Bar</h2></center>
+            <div class="hn1">
+            <ul class="hn">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Java</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a style="color:#dbd4d4f0"href="#">Bootstrap</a></li>
+            </ul>
+        </div>
+        </nav>
+    </div>
+</body>
+</html>
